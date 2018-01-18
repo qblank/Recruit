@@ -1,0 +1,10 @@
+/**
+ * 用于抽取公用的css样式
+ */
+*{
+    padding:0; margin:0;
+}
+
+ul,dl,ol{
+    list-style:none;
+}
