@@ -43,6 +43,9 @@
     background-color: #05b718;
 }
 
+.jobtetail_wrap .jobdetailtab ul{
+    border-bottom: 1px solid #aaa;
+}
 .jobtetail_wrap .jobdetailtab ul li a{
     float: left;
     width: 100px;
@@ -59,7 +62,6 @@
 
 .jobtetail_wrap .jobtetailtabdesc{
     width: 707px;
-    height: 182px;
     border-top: 1px solid #aaa;
     float: left;
 }
