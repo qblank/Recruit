@@ -3,11 +3,13 @@
     padding: 0;
 }
 
+ul{
+    list-style: none;
+}
 .content{
     width: 1249px;
     margin: 0 auto;
 }
-
 /*左边导航栏*/
 /*左边的盒子*/
 .content .content_left{
@@ -15,11 +17,9 @@
     float: left;
     width: 190px;
     height: 480px;
-    /*border:1px solid red;*/
     text-align: center;
     background-color: #6E6568;
 }
-
 /*ul*/
 .content .content_left .left_nav{
     display: inline-block;
@@ -46,18 +46,44 @@
     text-decoration: none;
     font-size: 20px;
     color: white;
-    font-family: "Microsoft Yahei";
 }
 /*滑动显示内容*/
 .content .content_left .detail{
     height: 450px;
-    width: 500px;
-    background-color: orange;
+    width: 510px;
+    color: white;
     position: absolute;
     left: 190px;
     top: 30px;
+    background-color: #6E6568;
+    opacity: 0.8;
     display: none;
     z-index: 2;
+}
+
+.content .content_left .detail .detail_title{
+    border-bottom: solid 1px #474a4c;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    font-weight: 700;
+}
+.content .content_left .detail .detail_all{
+    height: 430px;
+}
+.content .content_left .detail .detail_all a{
+    float: left;
+    width: 115px;
+    height: 19px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.content .content_left .detail .detail_all a:hover{
+    text-decoration: underline;
 }
 
 /*轮播图*/
@@ -69,7 +95,7 @@
 }
 #main{
     width: 1059px;
-    height: 340px;
+    height: 480px;
     position: relative;
     overflow: hidden;
 }
@@ -103,14 +129,13 @@
     height:60px;
     position:absolute;
     left: auto;
-    top:150px;
+    top:220px;
     margin-top:-20px;
     background:#000;
     cursor:pointer;
     line-height:60px;
     text-align:center;
     font-weight:bold;
-    font-family:'黑体';
     font-size:30px;
     color:#fff;
     opacity:0;
@@ -127,8 +152,78 @@
 /*新闻模块*/
 .content .news{
     height: 300px;
-    background-color: #eee;
-    margin-top:141px;
+    margin-top:30px;
+}
+.content .news .new{
+    width: 390px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+}
+.content .news .new .title_text{
+    font: 700 20px "Microsoft Yahei";
+    color: white;
+}
+.content .news .new .fa{
+    font-size: 20px;
+}
+.content .news .new dt{
+    background-image: linear-gradient(to right,#29A2E3,#40D0FF);
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+/*框顶颜色*/
+.content .news .new_apply dt{
+    background-image: linear-gradient(to right,#29A2E3,#40D0FF);
+}
+.content .news .new_work dt{
+    background-image: linear-gradient(to right,#EBA111,#FFC21C);
+}
+.content .news .new_talk dt{
+    background-image: linear-gradient(to right,#6AC936,#8DDF34);
+}
+/*图标的颜色*/
+.content .news .new_apply dt .fa{
+    color: #40D0FF;
+}
+.content .news .new_work dt .fa{
+    color: #FFC21C;
+}
+.content .news .new_talk dt .fa{
+    color: #8DDF34;
+}
+
+.content .news .new dd .dd_content_wrap{
+    border-bottom: 1px solid #eee;
+    height: 49px;
+    width: 80%;
+    margin: 0 auto;
+}
+.content .news .new dd .dd_content_wrap .news_info_text p{
+    float: left;
+    width: 200px;
+}
+.content .news .new dd .dd_content_wrap .btn_apply{
+    float: left;
+    border: 1px solid #55B1E4;
+    text-decoration: none;
+    color: #55B1E4;
+    border-radius: 4px;
+    text-align: center;
+    width: 74px;
+    line-height: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.content .news .new dd .news_info_text a{
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    line-height: 50px;
 }
 
 /*各个模块*/
@@ -138,13 +233,11 @@
     height: 305px;
     border:1px solid red;
 }
-
 /*模块1标题导航*/
 .model .pro_nav{
     height: 55px;
     background-color: #E01222;
 }
-
 .model .pro_nav span{
     color: white;
     font-family: "Microsoft Yahei";

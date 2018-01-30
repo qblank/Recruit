@@ -1,6 +1,6 @@
 
 .search_bg{
-    height: 184px;
+    height: 130px;
     background-color: #F6F9FB;
 
 }
@@ -52,7 +52,7 @@
 /*按钮*/
 .search_bg .sc_input .search{
     width: 100px;
-    height: 45px;
+    height: 43px;
     background-color: #55B1E4;
     color: white;
     font:700 18px "Microsoft Yahei";

@@ -37,32 +37,31 @@ body,ul,li{
     text-decoration: none;
     color: #55B1E4;
 }
-
 .nav .fa,.fa-home{
     font-size: 30px;
     line-height: 51px;
 }
-
 /*我的校园信息*/
 .nav .compus{
     width: 150px;
     height: 150px;
     position: absolute;
-    left: 318px;
+    left: 300px;
     top: 50px;
     border: 1px solid #EDEDED;
     display: none;
     text-align: center;
 }
-
 .nav  ul{
     margin: 0;
     padding: 0;
 }
-
 .nav .compus ul li{
     text-align: center;
     width: 150px;
+}
+.nav .compus ul li a .myConpus{
+    line-height: 39px;
 }
 .nav .compus ul li:hover{
     background-color: #eee;
@@ -77,12 +76,10 @@ body,ul,li{
     border: 1px solid #EDEDED;
     display: none;
 }
-
 .nav .myMessage li{
     text-align: center;
     width: 150px;
 }
-
 .nav .myMessage li:hover{
     background-color: #eee;
 }
