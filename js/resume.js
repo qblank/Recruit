@@ -21,3 +21,8 @@ $('#person_edit').click(function(){
 $('#contact_edit').click(function(){
     toggle('#contact');
 });
+
+/*li点击事件*/
+$("#btnMenu ul li").click(function(){
+    $(this).addClass("current").siblings("li").removeClass("current");
+});
